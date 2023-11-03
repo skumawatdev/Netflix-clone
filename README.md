@@ -669,6 +669,12 @@ That's it! You've successfully installed and set up Grafana to work with Prometh
 
 2. **Configure Prometheus Plugin Integration:**
     - Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.
+  
+
+
+![49](https://github.com/skumawatdev/Netflix-clone/assets/60931208/da9d226f-1373-4217-a669-a6d7cd6f8b77)
+![47](https://github.com/skumawatdev/Netflix-clone/assets/60931208/c9f7f293-d8d4-4b34-9d59-2b1c8f867104)
+
 
 
 **Phase 5: Notification**
