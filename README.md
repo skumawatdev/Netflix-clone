@@ -1,4 +1,6 @@
 
+
+![10](https://github.com/skumawatdev/Netflix-clone/assets/60931208/960ddd86-ce38-4cad-b538-1e20695afb14)
 ![netflix-logo](https://github.com/skumawatdev/Netflix-clone/assets/60931208/a40a8ba5-db92-4b11-884c-42b10a0c23d0)
 
 ![43](https://github.com/skumawatdev/Netflix-clone/assets/60931208/7cb70b9d-f4c4-45e2-8f91-1208a8abb2b7)
