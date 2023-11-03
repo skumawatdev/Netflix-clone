@@ -1,26 +1,9 @@
-<div align="center">
-  <img src="./public/assets/DevSecOps.png" alt="Logo" width="100%" height="100%">
 
-  <br>
-  <a href="http://netflix-clone-with-tmdb-using-react-mui.vercel.app/">
-    <img src="./public/assets/netflix-logo.png" alt="Logo" width="100" height="32">
-  </a>
-</div>
+![netflix-logo](https://github.com/skumawatdev/Netflix-clone/assets/60931208/a40a8ba5-db92-4b11-884c-42b10a0c23d0)
 
-<br />
+![43](https://github.com/skumawatdev/Netflix-clone/assets/60931208/7cb70b9d-f4c4-45e2-8f91-1208a8abb2b7)
+![42](https://github.com/skumawatdev/Netflix-clone/assets/60931208/db4f983a-f175-44fb-a249-ec635545f6d1)
 
-<div align="center">
-  <img src="./public/assets/home-page.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Home Page</p>
-</div>
-
-# **Youtube Video for step by step Demonstration!**
-[![Video Tutorial](https://img.youtube.com/vi/g8X5AoqCJHc/0.jpg)](https://youtu.be/g8X5AoqCJHc)
-
-
-## Susbcribe:
-[https://www.youtube.com/@cloudchamp?
-](https://www.youtube.com/@cloudchamp?sub_confirmation=1)
 
 # Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
 
@@ -37,7 +20,7 @@
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
-    git clone https://github.com/N4si/DevSecOps-Project.git
+    git clone https://github.com/skumawatdev/Netflix-clone.git
     ```
     
 
@@ -66,6 +49,9 @@
     ```
 
 It will show an error cause you need API key
+
+![7](https://github.com/skumawatdev/Netflix-clone/assets/60931208/ce188fb1-72e6-4159-a4fd-f262a601eb1e)
+
 
 **Step 4: Get the API Key:**
 
@@ -204,7 +190,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/skumawatdev/Netflix-clone.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -294,7 +280,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/skumawatdev/Netflix-clone.git'
             }
         }
         stage("Sonarqube Analysis "){
@@ -333,8 +319,8 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build --build-arg TMDB_V3_API_KEY=<yourapikey> -t netflix ."
-                       sh "docker tag netflix nasi101/netflix:latest "
-                       sh "docker push nasi101/netflix:latest "
+                       sh "docker tag netflix sunildocker786/netflix:latest "
+                       sh "docker push sunildocker786/netflix:latest "
                     }
                 }
             }
@@ -346,7 +332,7 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name netflix -p 8081:80 nasi101/netflix:latest'
+                sh 'docker run -d --name netflix -p 8081:80 sunildocker786/netflix:latest'
             }
         }
     }
